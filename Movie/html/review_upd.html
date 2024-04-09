@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>Review Update</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #FF0000;
+            margin-bottom: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #FF0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #cc0000;
+        }
+        .required {
+            color: #FF0000;
+        }
+        .go-back img {
+            border: 0;
+            width: 41px;
+            height: 66px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <h2>Update a Review</h2>
+    <form method="get" action="/Movie/review_upd">
+        <label for="review_id">Review ID <span class="required">*</span></label>
+        <input type="text" id="review_id" name="review_id" size="12" required>
+
+        <label for="review_id">Movie ID <span class="required">*</span></label>
+        <input type="text" id="review_id" name="movie_id" size="12" required>
+
+        <label for="review_description">Review Description <span class="required">*</span></label>
+        <input type="text" id="review_description" name="review_description" size="42" required>
+
+        <label for="star_rating">Star Rating <span class="required">*</span></label>
+        <select id="star_rating" name="star_rating" required>
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+        </select>
+
+        <input type="submit" name="Submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <p class="required">* required fields</p>
+
+    <p class="go-back">
+        <a href="\Movie\index.html">
+            <img src="goback.JPG" alt="Go Back">
+        </a>
+    </p>
+</div>
+</body>
+</html>

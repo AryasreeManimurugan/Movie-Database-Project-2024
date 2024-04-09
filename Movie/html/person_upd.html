@@ -1,0 +1,103 @@
+
+<head>
+    <title>Update a Person</title>
+    <style>
+			body {
+				background-image: url('https://i.redd.it/4fxxbm4opjd31.jpg'); /* Replace 'background.jpg' with your background image */
+				background-size: cover;
+				font-family: Arial, sans-serif;
+			}
+	
+			.container {
+				margin: 40px auto;
+				padding: 20px;
+				width: 60%; /* Adjust the width as needed */
+				max-width: 600px;
+				background-color: rgb(255, 255, 255);
+				border-radius: 10px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			}
+	
+			h2 {
+				color: #FF0000;
+				text-align: left;
+				margin-bottom: 20px;
+			}
+	
+			form {
+				margin-bottom: 20px;
+			}
+	
+			input[type="text"], select {
+				padding: 8px;
+				margin-bottom: 10px;
+				width: calc(50% - 20px); /* Make input boxes same size */
+				border-radius: 5px;
+				border: 1px solid #ccc;
+			}
+	
+			input[type="submit"], input[type="reset"] {
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5px;
+				background-color: #FF0000;
+				color: #fff;
+				cursor: pointer;
+			}
+	
+			input[type="submit"]:hover, input[type="reset"]:hover {
+				background-color: #ff6666;
+			}
+	
+			p {
+				margin-bottom: 10px;
+			}
+	
+			font[color="#FF0000"] {
+				font-weight: bold;
+			}
+	
+			img {
+				margin-top: 20px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 41px;
+				height: 66px;
+			}
+</style>
+  </head>
+
+<html>
+  <body>
+    <div class="container" >
+    <h2 align="left"><font color="#FF0000">Update a Person</font></h2>
+    <form method = "get" action = "/Movie/person_upd">
+      <p>
+        Person ID:<font color = "#FF0000">*</font>
+        <input type = "text" name = "personID" size="21">&nbsp;
+		</p>
+		<p>
+        Person name:<font color = "#FF0000">*</font>
+         <input type = "text" name = "personName" size="21">&nbsp;
+      </p>
+      <p>Person Gender:&nbsp;&nbsp;&nbsp;
+        <select siz="13" name="personGender">
+            <option value="none">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br>
+      <p>
+        Person Salary: <input type="number" name="personSalary" size="10"> 
+      </p>
+      <p><input type = "submit" name = "Submit" value = "Submit">
+         <input type = "reset" value = "Reset">
+      </p>
+    </form>
+    <p><font color = "#FF0000">* required fields</font></p>
+      <p><a href="\Movie\index.html">
+    <img border="0" src="goback.JPG" width="41" height="66"></a></p>
+  </div>
+  </body>
+</html>
+

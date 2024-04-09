@@ -1,0 +1,130 @@
+<web-app>
+<servlet>
+<servlet-name>movie_reg</servlet-name>
+<servlet-class>movie_reg</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>movie_reg</servlet-name>
+<url-pattern>/movie_reg</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>movie_upd</servlet-name>
+<servlet-class>movie_upd</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>movie_upd</servlet-name>
+<url-pattern>/movie_upd</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>movieJdbc</servlet-name>
+<servlet-class>movieJdbc</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>movieJdbc</servlet-name>
+<url-pattern>/movieJdbc</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>movie_del</servlet-name>
+<servlet-class>movie_del</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>movie_del</servlet-name>
+<url-pattern>/movie_del</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>person_reg</servlet-name>
+<servlet-class>person_reg</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>person_reg</servlet-name>
+<url-pattern>/person_reg</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>person_del</servlet-name>
+<servlet-class>person_del</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>person_del</servlet-name>
+<url-pattern>/person_del</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>personJdbc</servlet-name>
+<servlet-class>personJdbc</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>personJdbc</servlet-name>
+<url-pattern>/personJdbc</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>person_upd</servlet-name>
+<servlet-class>person_upd</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>person_upd</servlet-name>
+<url-pattern>/person_upd</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>movie_person_role_reg</servlet-name>
+<servlet-class>movie_person_role_reg</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>movie_person_role_reg</servlet-name>
+<url-pattern>/movie_person_role_reg</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>movie_person_roleJdbc</servlet-name>
+<servlet-class>movie_person_roleJdbc</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>movie_person_roleJdbc</servlet-name>
+<url-pattern>/movie_person_roleJdbc</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>movie_person_role_del</servlet-name>
+<servlet-class>movie_person_role_del</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>movie_person_role_del</servlet-name>
+<url-pattern>/movie_person_role_del</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>movie_person_role_upd</servlet-name>
+<servlet-class>movie_person_role_upd</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>movie_person_role_upd</servlet-name>
+<url-pattern>/movie_person_role_upd</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>review_reg</servlet-name>
+    <servlet-class>review_reg</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>review_reg</servlet-name>
+    <url-pattern>/review_reg</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>reviewJdbc</servlet-name>
+    <servlet-class>reviewJdbc</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>reviewJdbc</servlet-name>
+    <url-pattern>/reviewJdbc</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>review_del</servlet-name>
+    <servlet-class>review_del</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>review_del</servlet-name>
+    <url-pattern>/review_del</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>review_upd</servlet-name>
+    <servlet-class>review_upd</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>review_upd</servlet-name>
+    <url-pattern>/review_upd</url-pattern>
+</servlet-mapping>
+</web-app>

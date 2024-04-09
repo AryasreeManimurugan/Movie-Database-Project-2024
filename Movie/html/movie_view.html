@@ -1,0 +1,37 @@
+
+<head>
+    <title>Delete a moive</title>
+  </head>
+
+<html>
+  <body>
+    <h2 align="left"><font size="5" color="#FF0000">Delete a Movie</font></h2>
+    <form method = "get" action = "/Movie/movie_del">
+      <p>Movie ID: <font color = "#FF0000">&nbsp;&nbsp;</font><input type = "text" name = "movieID" size="12"><font color = "#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>&nbsp;&nbsp;
+         Movie Title:&nbsp;
+         <input type = "text" name = "movieTitle" size="21">&nbsp;
+         Movie Language:&nbsp;
+         <input type = "text" name = "movieLanguage" size="21">&nbsp;
+
+         Person ID:&nbsp;
+         <input type = "text" name = "personID" size="21">&nbsp;
+         Movie Genre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <select size="1" name="movieGenre">
+             <option value="1">Action</option>
+             <option value="2">Animation</option>
+             <option value="3">Comedy</option>
+             <option value="4">Drama</option>
+             <option value="5">Family</option>
+             <option value="6">Horror</option>
+             <option value="7">Romance</option>
+             <option value="8">Fantasy</option>
+         </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      <p>&nbsp;</p>
+      <p><input type = "submit" name = "Submit" value = "Submit">&nbsp;
+         <input type = "reset" value = "Reset"></p>
+    </form>
+    <p><a href="\Movie\index.html">
+    <img border="0" src="goback.JPG" width="41" height="66"></a></p>
+    </body>
+</html>
+

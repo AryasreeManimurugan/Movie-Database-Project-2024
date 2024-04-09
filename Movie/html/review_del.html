@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Delete a Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #FF0000;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            color: #FF0000;
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            width: calc(100% - 85px); /* Adjust based on label width */
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #FF0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #cc0000;
+        }
+        .go-back img {
+            border: 0;
+            width: 41px;
+            height: 66px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <h2>Delete a Review</h2>
+    <form method="get" action="/Movie/review_del">
+        <p>
+            <label for="review_id">Review ID:</label>
+            <input type="text" id="review_id" name="review_id" size="21">
+        </p>
+        <p>
+            <input type="submit" name="Submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+
+    <p><a href="\Movie\index.html" class="go-back">
+        <img src="goback.JPG" alt="Go Back">
+    </a></p>
+</div>
+</body>
+</html>

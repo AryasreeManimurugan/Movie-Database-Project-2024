@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add a Review</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    #container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #FF0000;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #FF0000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #cc0000;
+    }
+    .required {
+      color: #FF0000;
+    }
+    .go-back img {
+      border: 0;
+      width: 41px;
+      height: 66px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h2>Add a Review</h2>
+    <form method="post" action="/Movie/review_reg">
+      <label for="reviewID">Review ID <span class="required">*</span></label>
+      <input type="text" id="reviewID" name="reviewID" required>
+
+      <label for="movieID">Movie ID <span class="required">*</span></label>
+      <input type="text" id="movieID" name="movieID" required>
+
+
+      <label for="reviewDescription">Review Description <span class="required">*</span></label>
+      <input type="text" id="reviewDescription" name="reviewDescription" required>
+
+      <label for="starRating">Star Rating <span class="required">*</span></label>
+      <select id="starRating" name="starRating" required>
+        <option value="1">1 Star</option>
+        <option value="2">2 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="5">5 Stars</option>
+      </select>
+
+      <input type="submit" name="Submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+
+    <p class="required">* required fields</p>
+
+    <p class="go-back">
+      <a href="/Movie/index.html">
+        <img src="goback.JPG" alt="Go Back">
+      </a>
+    </p>
+  </div>
+</body>
+</html>
